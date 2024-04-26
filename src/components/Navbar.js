@@ -22,9 +22,6 @@ const Navbar = () => {
   const handlemenuclose = () => {
     setMenu("toggleSidebar");
   };
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
   return (
     <nav>
       <section className="top">
@@ -61,10 +58,10 @@ const Navbar = () => {
           </aside>
           <div className="nav-utilities" style={{ cursor:"pointer"}}>
             <img className="img search" src={search} alt="search" style={{cursor:"pointer"}}/>
-            <img className="img like" src={heart} alt="like" />
             <Badge badgeContent={cart?.length} color="secondary">
-              <img className="img bag" src={bag} alt="bag" />
+            <img className="img like" src={heart} alt="like" />
             </Badge>
+            <img className="img bag" src={bag} alt="bag" />
             <img className="img profile" src={profile} alt="profile" />
             {/* <img className="img lang" src={Language} alt="lang" /> */}
             <select name="languages" id="languages" className="lang">
