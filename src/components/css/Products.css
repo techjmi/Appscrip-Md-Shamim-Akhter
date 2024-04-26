@@ -249,7 +249,7 @@
       }
     
 }
-@media screen and (max-width:558px){
+@media(max-width:558px){
     .card {
         width: 120px !important;
         height: 150px;
@@ -295,8 +295,8 @@
         height: 224px;
       }
       .card {
-        background-color: aqua;
-        width: 150px !important;
+        /* background-color: aqua; */
+        width: 140px !important;
         height: 277px;
         /* margin: 5px !important; */
       }

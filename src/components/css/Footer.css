@@ -2,6 +2,7 @@
 #footer{
   background-color: #000000;
   color:white;
+  padding-bottom: 20px;
   /* padding-left: 128px; */
   
 }
@@ -260,6 +261,12 @@ gap: 10px;
         }
     
     
+}
+.title{
+    font-size: 18px;
+    line-height: 21.6px;
+    font-weight: 700;
+    margin-top:10px
 }
 @media(max-width:700px){
   .footer-bottom{

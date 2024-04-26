@@ -258,8 +258,8 @@ const Products = () => {
                   className="card"
                   key={ind}
                   style={{
-                    width: "270px",
-                    height: "350px",
+                    width: "240px",
+                    height: "370px",
                     marginRight: "10px",
                   }}
                 >
