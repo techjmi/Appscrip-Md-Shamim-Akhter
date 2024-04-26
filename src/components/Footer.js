@@ -15,6 +15,7 @@ import dropdown from "../Assets/arrow-right.png";
 const Footer = () => {
   const [metta, setMetta] = useState(false);
   const [quicklinks, setQuicklinks] = useState(false);
+  const[follow, setFollow]= useState(false)
   const [l1class, setL1class] = useState("l1 h75");
   const [l2class, setL2class] = useState("l2 h75");
   const [footerbtmcls, setFooterbtmcls] = useState("footer-bottom");
@@ -34,6 +35,11 @@ const Footer = () => {
     !quicklinks
       ? setFooterbtmcls("height536")
       : setFooterbtmcls("footer-bottom");
+  };
+  const [followOpen, setFollowOpen] = useState(false); // State to track if the "Follow Us" section is open or closed
+
+  const toggleFollow = () => {
+    setFollowOpen(!followOpen);
   };
 
   return (
@@ -135,13 +141,17 @@ const Footer = () => {
 
         <div className="footer-bottom-right">
           <div className="bot-media">
-            <div className="footer-followus">
-              FOLLOW US <img src={dropdown} alt="" />
-            </div>
-            <div className="footer-media"style={{paddingBottom:"10px"}} >
-              <img src={insta} alt="instagram" />
-              <img src={linkedin} alt="linkedin"/>
-            </div>
+      <div className={`footer-followus ${followOpen ? 'open' : ''}`} onClick={toggleFollow}>
+        FOLLOW US {window.innerWidth <= 768 && <img src={dropdown} alt="" />}
+      </div>
+      {/* Social media icons */}
+      {followOpen && (
+        <div className="footer-media" style={{paddingBottom:"10px"}}>
+          <img src={insta} alt="instagram" />
+          <img src={linkedin} alt="linkedin"/>
+        </div>
+      )}
+          
           </div>
           <div className="payment-portals">mettā muse ACCEPTS</div>
           <div className="payment-portals-img">
@@ -160,5 +170,4 @@ const Footer = () => {
     </footer>
   );
 };
-
 export default Footer;
