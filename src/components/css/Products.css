@@ -172,7 +172,70 @@
 }
 
 /* css media query */
+
 @media(max-width:768px) {
+    .card {
+        width: 200px;
+        height: 340px;
+    }
+    .card > img {
+        width: 200px;
+        height: 280px;
+    }
+    #filter {
+        width: 200px;
+    }
+    .showfilter {
+        width: 200px;
+    }
+    .width75 {
+        width: calc(100% - 392px);
+    }
+    .card {
+        width: 170px !important;
+        height: 300px;
+    }
+    .card > img {
+        width: 170px;
+        height: 240px;
+    }
+    #filter {
+        width: 170px;
+    }
+    .showfilter {
+        width: 170px;
+    }
+    .filter {
+        width: calc(100% - 112px);
+    }
+    .products {
+        width: calc(100% - 112px);
+    }
+    .width75 {
+        width: calc(100% - 362px);
+    }
+    .filter {
+        /* width: calc(100% - 112px); */
+        margin-top: -99px;
+    }
+    .products {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .width75 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    #select {
+        font-size: 15px;
+    }
+    .card {
+        width: 150px;
+        height: 270px;
+    }
+    .card > img {
+        width: 150px;
+        height: 230px;
+    }
     .card {
         width: 150px !important;
         height: 150px;
@@ -195,7 +258,6 @@
     .filter {
         margin-top: 0px;
         height: 58px;
-        width: 100%;
     }
     #select {
         font-size: 12px;
@@ -220,9 +282,6 @@
     }
     .products {
         width: calc(100% - 32px);
-    }
-    .filter {
-        width: 100%;
     }
     .filterlogo,
     .sort {
@@ -254,8 +313,10 @@
         width: 50%;
     }
 }
+
 @media(max-width:900px) {
     .filter {
+        /* width: calc(100% - 112px); */
         margin-top: -99px;
     }
     .products {
@@ -263,6 +324,18 @@
     }
     .width75 {
         grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    #select {
+        font-size: 15px;
+    }
+}
+@media(max-width:768px) {
+    .products {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+    .width75 {
+        grid-template-columns: repeat(1, 1fr); 
         gap: 20px;
     }
     #select {
