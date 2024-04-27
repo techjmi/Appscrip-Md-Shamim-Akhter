@@ -97,8 +97,8 @@
 .footer-bottom-left{
   width:50%;
   display: flex;
-  margin-bottom: 20px !important;
-  padding-bottom: 10px !important;
+  /* margin-bottom: 20px !important; */
+  /* padding-bottom: 10px !important; */
 }
 .footer-bottom-right{
   margin-left: 80px;
@@ -386,9 +386,12 @@ padding-right: 0px
   margin: 20px 0;
 }
 .footer-followus{
+  margin-top: 0 !important;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /* background-color: aliceblue; */
+  padding-bottom: 30px;
 }
 .bot-media{
   border-bottom: 1px solid #e5e5e5;
