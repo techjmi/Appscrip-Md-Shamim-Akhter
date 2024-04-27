@@ -170,181 +170,102 @@
 .rotate90deg{
     rotate:90deg
 }
-@media(max-width:768px){
-    .card {
-        width: 200px;
-        height: 340px;
-    }
-    .card >img{
-        width:200px;
-        height:280px;
-    }
-    #filter{
-        width:200px;
-    
-    }
-    .showfilter {
-        width: 200px;
-      }
-      .width75{
-        width: calc(100% - 392px);
-        
-    }
 
-}
-@media screen and (max-width:1020px){
+/* css media query */
+@media(max-width:768px) {
     .card {
-        width: 170px;
-        height: 300px;
-    }
-    .card >img{
-        width:170px;
-        height:240px;
-    }
-    #filter{
-        width:170px;
-    
-    }
-    .showfilter {
-        width: 170px;
-      }
-      .filter{
-        width : calc(100% - 112px);
-    }
-    #filter {
-       margin-left: 56px;
-      }
-      .products {
-        width: calc(100% - 112px);
-      }
-      .width75{
-        width: calc(100% - 362px);
-        
-    }
-
-}
-@media screen and (max-width:805px){
-    .filter {
-        /* width: calc(100% - 112px); */
-        margin-top: -99px;
-      }
-      .products{
-        grid-template-columns: repeat(3, 1fr);
-    }
-      .width75{
-        grid-template-columns: repeat(2, 1fr);
-        gap:20px;
-        
-    }
-    #select {
-        font-size: 15px;
-      }
-}
-@media screen and (max-width:647px){
-    .card {
-        width: 150px;
-        height: 270px;
-    }
-    .card > img {
-        width: 150px;
-        height: 230px;
-      }
-    
-}
-@media(max-width:558px){
-    .card {
-        width: 120px !important;
+        width: 150px !important;
         height: 150px;
-        /* background-color: gray; */
+        background-color: gray;
     }
     .card > img {
         width: 130px;
         height: 200px;
-      }
-      #filter {
-        width:130px
-      }
-      .costomize > span, .type-heading > span, #filter > div > span {
+    }
+    #filter {
+        width: 130px;
+    }
+    .costomize > span,
+    .type-heading > span,
+    #filter > div > span {
         font-size: 14px;
         line-height: 17px;
         font-weight: 700;
-      }
-    
-}
-@media(max-width:480px){
+    }
     .filter {
         margin-top: 0px;
-        height:58px
-      }
-      #select {
+        height: 58px;
+        width: 100%;
+    }
+    #select {
         font-size: 12px;
         width: 170px;
-      }
-      .qty {
-        font-size: 12px;
-      }
-    .txt{
+    }
+    .qty,
+    .txt {
         font-size: 12px;
     }
     .products {
         grid-template-columns: repeat(2, 1fr);
-        margin :16px;
+        margin: 16px;
         background-color: white;
-        ;
-      }
-      .card > img {
+    }
+    .card > img {
         width: 168px;
         height: 224px;
-      }
-      .card {
-        /* background-color: aqua; */
+    }
+    .card {
         width: 140px !important;
         height: 277px;
-        /* margin: 5px !important; */
-      }
-      .products {
-        width: calc(100% - 32px);
-      }
-      .filter {
-        width: 100%;
-      }
-      .filterlogo{
-        display:flex;
-        width:50%;
-        justify-content: center;
-        align-items: center;
-        font-size: 14px;
-        line-height: 16.6px;
-        font-weight: 700;
     }
-    .sort{
-        display:flex;
-        width:50%;
+    .products {
+        width: calc(100% - 32px);
+    }
+    .filter {
+        width: 100%;
+    }
+    .filterlogo,
+    .sort {
+        display: flex;
         justify-content: center;
         align-items: center;
-        border-left: 1px solid #E5E5E5;
         font-size: 14px;
         line-height: 16.6px;
+    }
+    .sort {
+        border-left: 1px solid #E5E5E5;
     }
     .showfilter {
         display: none;
-      }
-      .filter {
+    }
+    .filter {
         height: 41px;
-      }
-      /* .l1 {
-        width: 100%;
-      } */
-      .footer-bottom-left {
+    }
+    .footer-bottom-left {
         width: 100%;
         display: flex;
         flex-direction: column;
-      }
-      #filter {
-        position:absolute;
+    }
+    #filter {
+        position: absolute;
         z-index: 2;
         background-color: white;
         margin-left: 16px;
-        width:50%
-      }
+        width: 50%;
+    }
+}
+@media(max-width:900px) {
+    .filter {
+        margin-top: -99px;
+    }
+    .products {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .width75 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    #select {
+        font-size: 15px;
+    }
 }

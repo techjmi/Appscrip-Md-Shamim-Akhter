@@ -6,8 +6,6 @@ import { DataContext } from "../context/Dataprovider";
 const ProductsCard = ({ items }) => {
   const { cart, addToCart } = useContext(DataContext);
   const { id, title } = items;
-  // console.log(items.title)
-  // console.log('cart',cart)
   const isItemInCart = cart.find((item) => item.id === id);
 
   const handleAddToCart = () => {
@@ -25,7 +23,8 @@ const ProductsCard = ({ items }) => {
     <>
       <img src={items.image} className="products_image" style={{ width: "100%" }} />
       <div className="products_details">
-        <span className="title">{items.title.slice(0, 30)}</span>
+        {/* <span className="title">{items.title.slice(0, 30)}</span> */}
+        <span className="title">{items.title.split(' ', 2).join(' ')}</span>
         <span className="prod-desc">
           <div className="products_cart">
             <p className="products_price">
