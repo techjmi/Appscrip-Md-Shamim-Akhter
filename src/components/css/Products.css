@@ -172,71 +172,9 @@
 }
 
 /* css media query */
-/* @media(max-width:768px){
-    .card {
-        width: 200px;
-        height: 340px;
-    }
-    .card >img{
-        width:200px;
-        height:280px;
-    }
-    #filter{
-        width:200px;
-    
-    }
-    .showfilter {
-        width: 200px;
-      }
-      .width75{
-        width: calc(100% - 392px);
-        
-    }
-
-} */
-/* @media(max-width:768px){
-    .card {
-        width: 170px !important;
-        height: 300px;
-    }
-    .card >img{
-        width:170px;
-        height:240px;
-    }
-
-    .showfilter {
-        width: 170px;
-      }
- 
-    #filter {
-       margin-left: 56px;
-      }
-      .products {
-        width: calc(100% - 112px);
-      }
-      .width75{
-        width: calc(100% - 362px);
-        
-    }
-
-} */
-/* @media (max-width:768px){
-     
-      .products{
-        grid-template-columns: repeat(3, 1fr);
-    }
-      .width75{
-        grid-template-columns: repeat(2, 1fr);
-        gap:20px;
-        
-    }
-    #select {
-        font-size: 15px;
-      }
-} */
 @media(max-width:900px){
     .filter {
-        /* width: calc(100% - 112px); */
+        width: calc(100% - 112px);
         margin-top: -99px;
       }
       .products{
@@ -251,22 +189,11 @@
         font-size: 15px;
       }
 }
-/* @media(max-width:768px){
-    .card {
-        width: 150px;
-        height: 270px;
-    }
-    .card > img {
-        width: 150px;
-        height: 230px;
-      }
-    
-} */
 @media(max-width:768px){
     .card {
-        width: 150px !important;
+        width: 140px !important;
         height: 150px;
-        background-color: gray;
+        /* background-color: gray; */
     }
     .card > img {
         width: 130px;
@@ -287,10 +214,6 @@
         margin-top: 0px;
         height:58px
       }
-      /* #select {
-        font-size: 12px;
-        width: 170px;
-      } */
       .qty {
         font-size: 12px;
       }
@@ -299,19 +222,11 @@
     }
     .products {
         grid-template-columns: repeat(2, 1fr);
-        margin :16px 0;
-        background-color:black;
+        margin :16px;
+        /* background-color:black; */
         ;
         width: calc(100% - 32px);
       }
-      /* .card > img {
-        width: 168px;
-        height: 224px;
-      }
-      .card {
-        width: 140px !important;
-        height: 277px;
-      } */
       .filter {
         width: 100%;
         height: 41px;
@@ -342,12 +257,4 @@
         display: flex;
         flex-direction: column;
       }
-      /* #filter {
-        position:absolute;
-        z-index: 2;
-        background-color: white;
-        margin-left: 16px;
-        width:50%;
-        background-color: burlywood;
-      } */
 }
