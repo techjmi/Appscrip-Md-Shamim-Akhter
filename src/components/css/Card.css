@@ -15,35 +15,27 @@
     font-weight: 400;
     font-size: 12px;
     color: #888792;
-    /* background-color: black; */
-    /* line-height: 16.8px; */
   }
   .card{
     width:300px;
-    /* height : 462px; */
-    /* position: absolute; */
     height: 600px;
-    /* background-color: goldenrod; */
     display: flex;
     align-items: flex-start;
     flex-direction: column;
     margin: 24px auto;
     padding: 10px;
     overflow: hidden;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
 }
 .products_details{
-    /* background-color: gainsboro; */
     width: 100%;
-    /* text-align: justify; */
+   
 }
 .products_cart{
     display: flex;
     justify-content: space-between;
-    /* text-align: center; */
     flex-direction: row;
     padding: 0 !important;
-    /* background-color: brown; */
     width: 100%;
     gap: 2px;
 }

@@ -193,7 +193,6 @@
     .card {
         width: 140px !important;
         height: 150px;
-        /* background-color: gray; */
     }
     .card > img {
         width: 130px;
@@ -207,10 +206,7 @@
         line-height: 17px;
         font-weight: 700;
       }
-    
-}
-@media(max-width:768px){
-    .filter {
+      .filter {
         margin-top: 0px;
         height:58px
       }
@@ -257,4 +253,8 @@
         display: flex;
         flex-direction: column;
       }
+    
+}
+@media(max-width:768px){
+   
 }
