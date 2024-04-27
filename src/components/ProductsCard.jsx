@@ -6,8 +6,8 @@ import { DataContext } from "../context/Dataprovider";
 const ProductsCard = ({ items }) => {
   const { cart, addToCart } = useContext(DataContext);
   const { id, title } = items;
-  console.log(items.title)
-  console.log('cart',cart)
+  // console.log(items.title)
+  // console.log('cart',cart)
   const isItemInCart = cart.find((item) => item.id === id);
 
   const handleAddToCart = () => {

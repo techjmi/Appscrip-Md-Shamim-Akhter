@@ -4,18 +4,14 @@ import logo from "../Assets/Logo.png";
 import search from "../Assets/search.svg";
 import bag from "../Assets/bag.svg";
 import profile from "../Assets/user.svg";
-import Language from "../Assets/Language.png";
 import heart from "../Assets/heart.svg";
 import menu from "../Assets/hamber.svg";
 import { Badge } from "@mui/material";
-// import "./Navbar.css";
 import "./css/Navbar.css";
 import { DataContext } from "../context/Dataprovider";
-
 const Navbar = () => {
   const [menuclass, setMenu] = useState("toggleSidebar");
   const { cart } = useContext(DataContext);
-  const [menuOpen, setMenuOpen] = useState(false);
   const handlemenu = () => {
     setMenu("zindex3");
   };
@@ -26,7 +22,7 @@ const Navbar = () => {
     <nav>
       <section className="top">
         <span className="headline left-m">
-          <img className="headline-logo" src={headlinelogo} />{" "}
+          <img className="headline-logo" src={headlinelogo} />
           <span>Lorem ipsum dolor</span>
         </span>
         <span className="headline">
@@ -56,21 +52,24 @@ const Navbar = () => {
             <div className="stories">Stories</div>
             <div className="contactus">Contact Us</div>
           </aside>
-          <div className="nav-utilities" style={{ cursor:"pointer"}}>
-            <img className="img search" src={search} alt="search" style={{cursor:"pointer"}}/>
+          <div className="nav-utilities" style={{ cursor: "pointer" }}>
+            <img
+              className="img search"
+              src={search}
+              alt="search"
+              style={{ cursor: "pointer" }}
+            />
             <Badge badgeContent={cart?.length} color="secondary">
-            <img className="img like" src={heart} alt="like" />
+                <img className="img like" src={heart} alt="like" />
             </Badge>
             <img className="img bag" src={bag} alt="bag" />
             <img className="img profile" src={profile} alt="profile" />
             {/* <img className="img lang" src={Language} alt="lang" /> */}
             <select name="languages" id="languages" className="lang">
-  <option value="ENG">ENG</option>
-  <option value="ESP">ESP</option>
-  <option value="FRA">FRA</option>
-</select>
-
-
+              <option value="ENG">ENG</option>
+              <option value="ESP">ESP</option>
+              <option value="FRA">FRA</option>
+            </select>
           </div>
         </div>
         <span className="website-name">LOGO</span>

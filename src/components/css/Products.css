@@ -37,15 +37,17 @@
     border:none;
     background-color: white;
     font-size: 18px;
-    padding: auto 0;
+    padding: auto 10px;
     line-height: 40;
     font-weight: 700;
 }
-#select > option{
+#select option{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     background-color: white;
     border : none;
     text-align: right;
     font-weight: 400;
+    padding: auto 10px !important;
     
 }
 #select > option:hover{

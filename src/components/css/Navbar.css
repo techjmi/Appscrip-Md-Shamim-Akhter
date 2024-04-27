@@ -11,8 +11,8 @@
     
 }
 .nav-utilities:hover{
-  background-color: #EB4C6B !important;
-  cursor: pointer;
+  /* background-color: #EB4C6B !important; */
+  cursor: pointer !important;
 }
 .toggleSidebar{
   display:none
