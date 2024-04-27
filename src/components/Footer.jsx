@@ -36,7 +36,7 @@ const Footer = () => {
       ? setFooterbtmcls("height536")
       : setFooterbtmcls("footer-bottom");
   };
-  const [followOpen, setFollowOpen] = useState(false); // State to track if the "Follow Us" section is open or closed
+  const [followOpen, setFollowOpen] = useState(false);
 
   const toggleFollow = () => {
     setFollowOpen(!followOpen);
@@ -79,6 +79,7 @@ const Footer = () => {
                 src={dropdown}
                 onClick={handlemettamuse}
                 className={l1icocls}
+                alt="arrow-drop"
               />
             </div>
             {metta ? (

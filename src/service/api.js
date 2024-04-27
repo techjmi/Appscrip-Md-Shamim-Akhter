@@ -1,3 +1,4 @@
+//fetch products from fake store api logic
 const url = "https://fakestoreapi.com/products";
 
 export const fetchProducts = async () => {
@@ -13,11 +14,3 @@ export const fetchProducts = async () => {
     return null;
   }
 };
-// products by category
-// export const getByCatergory=async()=>{
-//   try {
-//     const response=
-//   } catch (error) {
-    
-//   }
-// }

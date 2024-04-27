@@ -97,7 +97,8 @@
 .footer-bottom-left{
   width:50%;
   display: flex;
-  position: relative;
+  margin-bottom: 20px !important;
+  padding-bottom: 10px !important;
 }
 .footer-bottom-right{
   margin-left: 80px;
@@ -107,7 +108,7 @@
   flex-direction: column;
   justify-content: space-between;
   height: 260px;
-  width:50%
+  width:50%;
 }
 .l1-heading, .l2-heading, .footer-followus, .payment-portals{
   font-size: 24.71px;
